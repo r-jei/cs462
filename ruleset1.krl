@@ -44,8 +44,8 @@ A first ruleset for the Quickstart
   rule hello_monkey {
     select when echo monkey
     pre {
-      name = event:attr("name").defaultsTo("Monkey").klog("name attr equals: ")
-      /*
+      //name = event:attr("name").defaultsTo("Monkey").klog("name attr equals: ")
+      //*
       name = event:attr("name").klog("name attr equals: ")
       name = (name=="") => "Monkey"
       | name
